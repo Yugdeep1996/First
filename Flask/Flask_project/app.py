@@ -41,6 +41,9 @@ for i in range(1, len(workbook2)):
 app = Flask(__name__)  
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+@app.route("/")
+def Search_ifsc_viewset():     
+    return jsonify({'MESSAGE': 'Welcome user'})
 
 @app.route("/ifsc_search")
 def Search_ifsc_viewset():
