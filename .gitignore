@@ -1,0 +1,7 @@
+.vscode
+.idea
+Django/Django_project/db.sqlite3
+__pycache__
+migrations
+venv
+.pytest_cache

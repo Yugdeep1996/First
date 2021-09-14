@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "ef3346be-d86f-4609-bcaf-8cdc0d98e911",
+		"name": "Postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065002",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ifsc_search",
+						""
+					],
+					"query": [
+						{
+							"key": "ifsc_code",
+							"value": "ABHY0065002"
+						}
+					]
+				}
+			},
+			"response": [{"data": {"IFSC RESULTS": [
+					{
+						"ADDRESS": 22,
+						"BANK": "ABHYUDAYA COOPERATIVE BANK LIMITED",
+						"BRANCH": "ABHYUDAYA EDUCATION SOCIETY, OPP. BLDG. NO. 18, ABHYUDAYA NAGAR, KALACHOWKY, MUMBAI - 400033",
+						"CITY": "GREATER MUMBAI",
+						"CODE": "ABHYUDAYA NAGAR",
+						"DISTRICT": "MUMBAI",
+						"IFSC": "ABHY0065002",
+						"MICR": 400065002,
+						"STATE": "MAHARASHTRA",
+						"STD_CODE": 24702643
+					}]
+			},
+			"message": "IFSC SEARCHED DATA",
+			"success": true}]
+		},
+		{
+			"name": "http://127.0.0.1:8000/bank_leader_board/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/bank_leader_board/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bank_leader_board",
+						""
+					]
+				}
+			},
+			"response": [{
+				"BANK LEADER BOARD RESULTS": [
+					{
+						"AXIS BANK": "5242"
+					},
+					{
+						"BANK OF INDIA": "5295"
+					},
+					{
+						"ICICI BANK LIMITED": "5693"
+					},
+					{
+						"INDIAN BANK": "6089"
+					},
+					{
+						"HDFC BANK": "7012"
+					},
+					{
+						"BANK OF BARODA": "9558"
+					},
+					{
+						"UNION BANK OF INDIA": "10178"
+					},
+					{
+						"CANARA BANK": "10817"
+					},
+					{
+						"PUNJAB NATIONAL BANK": "12237"
+					},
+					{
+						"STATE BANK OF INDIA": "28500"
+					}
+				],
+				"message": "BANK LEADER BOARD DATA",
+				"success": true
+			}]
+		},
+		{
+			"name": "http://127.0.0.1:8000/statistics/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/statistics/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"statistics",
+						""
+					]
+				}
+			},
+			"response": [{
+				"STATISTICS RESULTS": [
+					{
+						"ABHY0065002": "1630316176.2761385"
+					}
+				],
+				"message": "STATISTICS DATA",
+				"success": true
+			}]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api_count/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api_count/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api_count",
+						""
+					]
+				}
+			},
+			"response": [{
+				"RESULTS": {
+					"http://127.0.0.1:8000/bank_leader_board/": 4,
+					"http://127.0.0.1:8000/ifsc_search/": 5,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065001": 6,
+					"http://127.0.0.1:8000/bank_leader_board/?sortorder=DESC&fetchcount=20": 1,
+					"http://127.0.0.1:8000/statistics/": 2,
+					"http://127.0.0.1:8000/statistics/?sortorder=ASC&fetchcount=10": 2,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_search=ABHY0065001": 1,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065002": 2
+				},
+				"message": "APIS COUNT DATA",
+				"success": true
+			}]
+		},
+		{
+			"name": "http://127.0.0.1:8000/ifsc_count/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ifsc_count/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ifsc_count",
+						""
+					]
+				}
+			},
+			"response": [{
+				"RESULTS": {
+					"http://127.0.0.1:8000/ifsc_search/": 5,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065001": 6,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_search=ABHY0065001": 1,
+					"http://127.0.0.1:8000/ifsc_search/?ifsc_code=ABHY0065002": 2
+				},
+				"message": "IFSC COUNT DATA",
+				"success": true
+			}]
+		}
+	]
+}
